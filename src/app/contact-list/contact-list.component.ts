@@ -26,6 +26,10 @@ import { ContactService } from '../contact-service.service';
              [queryParams]="{ foo: optionalParam.value }">
               details (link) </a>
         </td>
+        <td>
+          <a [routerLink]="['contact', contact.id, 'edit']">
+              edit </a>
+        </td>
         <td> <input #optionalParam (keyup)="0" /> </td>
       </tr>
     </table>
